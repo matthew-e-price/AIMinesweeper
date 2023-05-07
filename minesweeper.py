@@ -58,25 +58,29 @@ def make_game_board(n, b):
     return board_array
 
 
+# n = grid size, all cells are "-"
 def make_player_board(n):
     player_array = [["-" for row in range(n)] for column in range(n)]
     return player_array
 
 
+# Display the provided board
 def display_board(board):
     for row in board:
         print(" ".join(str(cell) for cell in row))
         print("")
 
 
-def check_for_win(player_array):
-    for row in player_array:
+# Check the player's board for victory
+def check_for_win(player_board):
+    for row in player_board:
         for cell in row:
             if cell == "-":
                 return False
     return True
 
 
+# Show the player their score and ask if they wish to continue
 def continue_game(score):
     print("Score: ", score)
     is_continue = input("Do you want to try again? (Y/N) :")
@@ -85,6 +89,7 @@ def continue_game(score):
     return True
 
 
+# Plays the minesweeper game until player wishes to quit
 def minesweeper():
     keep_playing = True
     while keep_playing:
