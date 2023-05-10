@@ -1,11 +1,9 @@
-WIDTH = 1440
-HEIGHT = 720
-GRID_SIZE = 6
-CELL_COUNT = GRID_SIZE ** 2
-MINES_COUNT = (GRID_SIZE ** 2) // 4
-IMG_BLANK = "Images/MineDefault.png"
+WIDTH = 800
+HEIGHT = 900
+IMG_DEFAULT = "Images/MineDefault.png"
 IMG_BOMB = "Images/MineBomb.png"
 IMG_FLAG = "Images/MineFlag.png"
+IMG_ZERO = "Images/Mine0.png"
 IMG_ONE = "Images/Mine1.png"
 IMG_TWO = "Images/Mine2.png"
 IMG_THREE = "Images/Mine3.png"
